@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  // Optional: Add basePath if your site is not hosted at the root
-  // basePath: '/personal-website',
+  // Add basePath for GitHub Pages deployment
+  basePath: '/personal-website',
   
   // GitHub Pages does not support dynamic routes with trailing slashes
   trailingSlash: true,
