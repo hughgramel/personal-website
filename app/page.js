@@ -206,7 +206,7 @@ export default function Home() {
         </div>
 
           {/* Right Section (Extras) */}
-          <div id="right-section" className="flex flex-col md:col-span-2 lg:col-span-1 gap-8 lg:gap-30 ">
+          <div id="right-section" className="flex flex-col md:col-span-2 lg:col-span-1 gap-8 lg:gap-20 ">
             <div>
               <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">👾 <span className="text-[#BD93F9]">4</span> Favorite Video Games</h2>
               <RightBox>

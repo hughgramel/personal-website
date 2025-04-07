@@ -8,9 +8,9 @@ export default function TypewriterHero() {
           <Typewriter
             options={{
               autoStart: true,
-              loop: true,
-              delay: 75,
-              deleteSpeed: 50,
+              loop: false,
+              delay: 80,
+              deleteSpeed: 60,
               cursor: "_"
             }}
             onInit={(typewriter) => {
@@ -21,6 +21,7 @@ export default function TypewriterHero() {
                 .typeString(`CS @ <span class="text-[#BD93F9]">UW</span>`)
                 .pauseFor(2000)
                 .deleteAll()
+                .typeString(`Hi, I'm <span class="text-[#BD93F9]">Hugh!</span>`)
                 // .typeString(`Hi, I'm <span class="text-[#8BE9FD]">open for work.</span>`)
                 // .pauseFor(2000)
                 // .deleteAll()
