@@ -5,6 +5,7 @@ import Link from "next/link";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { HiOutlineMail } from "react-icons/hi";
 import RightBox from "../components/RightBox";
+import GitHubImage from "../components/GitHubImage";
 
 
 
@@ -25,7 +26,7 @@ export default function Home() {
           className="flex flex-col items-center lg:sticky lg:top-16 self-start"
         >
           <div className="w-64 h-64 rounded-full overflow-hidden bg-gray-200 mb-8 border-[#44475A] border-3">
-            <Image
+            <GitHubImage
               src="/hugh.png"
               width={300}
               height={300}
@@ -120,7 +121,7 @@ export default function Home() {
                   <li>Built a modular architecture to support other Paradox games</li>
                 </ul>
                 {/* <div className="rounded-xl border border-[#44475A] mt-4 overflow-hidden">
-                  <Image
+                  <GitHubImage
                     src="/screenshots/cura.png"
                     alt="Screenshot of Cura"
                     width={800}
