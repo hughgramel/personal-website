@@ -5,7 +5,6 @@ import Link from "next/link";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { HiOutlineMail } from "react-icons/hi";
 import RightBox from "../components/RightBox";
-import imageLoader from "../utils/imageLoader";
 
 
 
@@ -33,7 +32,7 @@ export default function Home() {
               alt="Profile photo"
               className="object-cover w-full h-full"
               priority
-              loader={imageLoader}
+              unoptimized
             />
           </div>
           <h1 className="text-3xl mb-8 font-[family-name:var(--font-jetbrains-mono)] flex items-center justify-center gap-4">
@@ -127,7 +126,7 @@ export default function Home() {
                     width={800}
                     height={450}
                     className="w-full h-auto object-cover"
-                    loader={imageLoader}
+                    unoptimized
                   />
                 </div> */}
 
