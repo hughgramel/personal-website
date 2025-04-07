@@ -1,16 +1,20 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 export default function GitHubImage(props) {
   const { src, ...rest } = props;
+  const [imageSrc, setImageSrc] = useState(src);
   
-  // If src begins with a slash, handle basePath for GitHub Pages
-  const imageSrc = src.startsWith('/') 
-    ? (typeof window !== 'undefined' && window.location.hostname === 'hughgramel.github.io' 
-        ? `/personal-website${src}` 
-        : src)
-    : src;
+  useEffect(() => {
+    // Only run this on the client after hydration
+    if (window.location.hostname === 'hughgramel.github.io') {
+      if (src.startsWith('/')) {
+        setImageSrc(`/personal-website${src}`);
+      }
+    }
+  }, [src]);
     
   return <Image {...rest} src={imageSrc} />;
 } 
