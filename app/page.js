@@ -95,9 +95,9 @@ export default function Home() {
               <div className="mb-6">
                 <div className="flex items-center gap-2">
                   <p className="text-xl font-semibold">Productivity Tracking Website</p>
-                  <a href="https://github.com/yourusername/cura" target="_blank" rel="noopener noreferrer">
+                  {/* <a href="https://github.com/yourusername/cura" target="_blank" rel="noopener noreferrer">
                     <SiGithub className="text-2xl hover:text-gray-400 transition" />
-                  </a>
+                  </a> */}
                 </div>
                 <p className="text-base text-gray-400">React, TypeScript, Firebase</p>
                 <ul className="list-disc list-inside text-lg">
@@ -110,9 +110,9 @@ export default function Home() {
               <div className="mb-6">
                 <div className="flex items-center gap-2">
                   <p className="text-xl font-semibold">Victoria 2 Save Game Analyzer</p>
-                  <a href="https://github.com/yourusername/cura" target="_blank" rel="noopener noreferrer">
+                  {/* <a href="https://github.com/yourusername/cura" target="_blank" rel="noopener noreferrer">
                     <SiGithub className="text-2xl hover:text-gray-400 transition" />
-                  </a>
+                  </a> */}
                 </div>
                 <p className="text-base text-gray-400">Java, CSV, Regex</p>
                 <ul className="list-disc list-inside text-lg">
@@ -136,9 +136,9 @@ export default function Home() {
               <div>
                 <div className="flex items-center gap-2">
                   <p className="text-xl font-semibold">Discrete Math Learning Site</p>
-                  <a href="https://github.com/yourusername/cura" target="_blank" rel="noopener noreferrer">
+                  {/* <a href="https://github.com/yourusername/cura" target="_blank" rel="noopener noreferrer">
                     <SiGithub className="text-2xl hover:text-gray-400 transition" />
-                  </a>
+                  </a> */}
                 </div>
                 <p className="text-base text-gray-400">TypeScript, React</p>
                 <ul className="list-disc list-inside text-lg">
