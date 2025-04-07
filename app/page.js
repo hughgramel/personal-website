@@ -6,7 +6,7 @@ import { SiGithub, SiLinkedin } from "react-icons/si";
 import { HiOutlineMail } from "react-icons/hi";
 import RightBox from "../components/RightBox";
 import GitHubImage from "../components/GitHubImage";
-
+import TypewriterHero from "@/components/TypewriterHero";
 
 
 
@@ -39,18 +39,21 @@ export default function Home() {
           <h1 className="text-3xl mb-8 font-[family-name:var(--font-jetbrains-mono)] flex items-center justify-center">
             <div className="flex items-center justify-center gap-4">
               <div className="flex items-center justify-center gap-4">
-                <span>
-                  Hi, I'm
-                  <span className="text-[#BD93F9]"> Hugh!</span>
-                </span>
+                <TypewriterHero/>
               </div>
-              <div className="flex items-center justify-center gap-4">
+              
+            </div>
+          </h1>
+
+          <READMECard />
+
+          <div className="flex items-center justify-center gap-4 mt-8">
                 <a
                   href="mailto:hgram007@uw.edu"
                   className="hover:text-white transition"
                   aria-label="Email"
                 >
-                  <HiOutlineMail className="text-3xl " />
+                  <HiOutlineMail className="text-4xl " />
                 </a>
                 <a
                   href="https://linkedin.com/in/hugh-gramelspacher"
@@ -59,7 +62,7 @@ export default function Home() {
                   className="hover:text-white transition"
                   aria-label="LinkedIn"
                 >
-                <SiLinkedin className="text-3xl" />
+                <SiLinkedin className="text-4xl" />
                 </a>
                 <a
                   href="https://github.com/hughgramel"
@@ -68,13 +71,9 @@ export default function Home() {
                   className="hover:text-white transition"
                   aria-label="GitHub"
                 >
-                  <SiGithub className="text-3xl " />
+                  <SiGithub className="text-4xl " />
                 </a>
               </div>
-            </div>
-          </h1>
-
-          <READMECard />
           {/* <ContactList /> */}
         </div>
 
