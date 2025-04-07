@@ -244,7 +244,7 @@ export default function Home() {
             <div>
               <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">💬 1 Quote</h2>
               <RightBox>
-                <p className="italic">“Your time is limited, so don't waste it living someone else's life.”.” – Steve Jobs</p>
+                <p className="italic">“Your time is limited, so don't waste it living someone else's life.” – Steve Jobs</p>
               </RightBox>
             </div>
 
@@ -255,8 +255,6 @@ export default function Home() {
                   <li>Times I've been to Canada</li>
                   <li>Number of NFTs I currently own</li>
                   <li>Hours slept during the hackathon</li>
-                  <li>Wormholes I've personally gone through</li>
-                  
                 </ul>
               </RightBox>
             </div>
