@@ -36,37 +36,42 @@ export default function Home() {
               unoptimized
             />
           </div>
-          <h1 className="text-3xl mb-8 font-[family-name:var(--font-jetbrains-mono)] flex items-center justify-center gap-4">
-            
-            <span>
-              Hi, I'm
-              <span className="text-[#BD93F9]"> Hugh!</span>
-            </span>
-            <a
-              href="mailto:hgram007@uw.edu"
-              className="hover:text-white transition"
-              aria-label="Email"
-            >
-              <HiOutlineMail className="text-3xl" />
-            </a>
-            <a
-              href="https://linkedin.com/in/hugh-gramelspacher"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-white transition"
-              aria-label="LinkedIn"
-            >
-            <SiLinkedin className="text-3xl" />
-            </a>
-            <a
-              href="https://github.com/hughgramel"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-white transition"
-              aria-label="GitHub"
-            >
-              <SiGithub className="text-3xl" />
-            </a>
+          <h1 className="text-3xl mb-8 font-[family-name:var(--font-jetbrains-mono)] flex items-center justify-center">
+            <div className="flex items-center justify-center gap-4">
+              <div className="flex items-center justify-center gap-4">
+                <span>
+                  Hi, I'm
+                  <span className="text-[#BD93F9]"> Hugh!</span>
+                </span>
+              </div>
+              <div className="flex items-center justify-center gap-4">
+                <a
+                  href="mailto:hgram007@uw.edu"
+                  className="hover:text-white transition"
+                  aria-label="Email"
+                >
+                  <HiOutlineMail className="text-3xl " />
+                </a>
+                <a
+                  href="https://linkedin.com/in/hugh-gramelspacher"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition"
+                  aria-label="LinkedIn"
+                >
+                <SiLinkedin className="text-3xl" />
+                </a>
+                <a
+                  href="https://github.com/hughgramel"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition"
+                  aria-label="GitHub"
+                >
+                  <SiGithub className="text-3xl " />
+                </a>
+              </div>
+            </div>
           </h1>
 
           <READMECard />
@@ -158,7 +163,7 @@ export default function Home() {
               <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">🎓 Education</h2>
               <p className="text-xl font-semibold text-[#BD93F9]">BS in Computer Science & BA in History</p>
               <p className="text-base text-gray-400">University of Washington — Expected June 2026</p>
-              <p className="text-base text-gray-400 mb-2">GPA: 3.93</p>
+              <p className="text-base text-gray-400">GPA: 3.93</p>
               <ul className="list-disc list-inside text-lg">
                 <li>Relevant Courses: Data Structures and Algorithms, Software Design and Implementation, Hardware/Software Interface, Systems Programming</li>
                 <li>Web Development, Introduction to Database Systems</li>
