@@ -28,9 +28,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body
-        className={`${robotoSans.variable} ${robotoMono.variable} ${jetBrains_Mono.variable} ${monaSans.variable} antialiased min-h-screen flex flex-col`}
+        className={`${robotoSans.variable} ${robotoMono.variable} ${jetBrains_Mono.variable} ${monaSans.variable} antialiased min-h-screen flex flex-col bg-[#282A36] text-[#F8F8F2]`}
       >
         
         <main className="flex-grow">

@@ -1,13 +1,9 @@
 @import "tailwindcss";
 
+/* Set default fonts */
 :root {
-  --background: #282A36;
-  --foreground: #F8F8F2;
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-roboto-sans);
   --font-mono: var(--font-jetbrains-mono);
-  color-scheme: dark;
 }
 
 html {
@@ -15,17 +11,9 @@ html {
   scroll-snap-type: y proximity; /* optional: lets it feel less strict */
 }
 
-/* We'll keep this for devices that prefer light mode, but default is dark */
-@media (prefers-color-scheme: light) {
-  :root {
-    --background: #F8F8F2;
-    --foreground: #2e2e2e;
-    color-scheme: light;
-  }
-}
-
 body {
-  background-color: var(--background);
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Remove the media queries and variable-based colors since we're now using 
+   Tailwind classes directly in the layout.js file */

@@ -18,7 +18,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen pt-16 px-4 font-mono text-[#F8F8F2]">
+    <div className="flex flex-col min-h-screen pt-16 px-4 font-mono bg-[#282A36] text-[#F8F8F2]">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
         {/* Side Section - 1/3 width on large screens */}
         <div
