@@ -5,17 +5,14 @@ export default function READMECard() {
           hughgramel <span>/</span> README<span>.md</span>
         </div>
   
-        <ul className="space-y-3 text-base leading-relaxed " style={{
+        <ul className="space-y-3 list-disc list-inside text-base leading-relaxed " style={{
             fontFamily:
             '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Mona Sans", sans-serif',
         }}>
-          <li>👋 Hi, I’m @hughgramel</li>
-          <li>👀 I’m interested in history, computer science, and making things!</li>
-          <li>🌱 I’m studying Computer Science and History at the University of Washington.</li>
-          <li>💞️ I want to collaborate on cool projects that can change the world.</li>
-          <li>
-            📫 You can email me at <a href="mailto:hgram007@uw.edu" className="underline hover:text-white transition">hgram007@uw.edu</a>, or find me on <a href="https://linkedin.com/in/hugh-gramelspacher" className="underline hover:text-white transition" target="_blank">LinkedIn</a>.
-          </li>
+          <li>Computer science and history student at the University of Washington </li>
+          <li>Enjoys learning, teaching, making projects, and helping people around me</li>
+          <li>Loves exploring ideas and diving into complex topics to get lost in for hours</li>
+          <li>Always looking for ways to combine creativity with problem-solving in a way that has a real impact on people</li>
         </ul>
       </div>
     );
