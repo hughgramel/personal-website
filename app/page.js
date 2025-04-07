@@ -115,33 +115,9 @@ export default function Home() {
                 </ul>
               </div>
 
+              
+
               <div className="mb-6">
-                <div className="flex items-center gap-2">
-                  <p className="text-xl font-semibold text-[#BD93F9]">Victoria 2 Save Game Analyzer</p>
-                  {/* <a href="https://github.com/yourusername/cura" target="_blank" rel="noopener noreferrer">
-                    <SiGithub className="text-2xl hover:text-gray-400 transition" />
-                  </a> */}
-                </div>
-                <p className="text-base text-gray-400">Java, CSV, Regex</p>
-                <ul className="list-disc list-inside text-lg">
-                  <li>Parsed 500MB+ Victoria 2 save files in under 5 seconds</li>
-                  <li>Extracted demographics and exported to CSV for visualization</li>
-                  <li>Built a modular architecture to support other Paradox games</li>
-                </ul>
-                {/* <div className="rounded-xl border border-[#44475A] mt-4 overflow-hidden">
-                  <GitHubImage
-                    src="/screenshots/cura.png"
-                    alt="Screenshot of Cura"
-                    width={800}
-                    height={450}
-                    className="w-full h-auto object-cover"
-                    unoptimized
-                  />
-                </div> */}
-
-                </div>
-
-              <div>
                 <div className="flex items-center gap-2">
                   <p className="text-xl font-semibold text-[#BD93F9]">Discrete Math Learning Site</p>
                   {/* <a href="https://github.com/yourusername/cura" target="_blank" rel="noopener noreferrer">
@@ -153,6 +129,21 @@ export default function Home() {
                   <li>Interactive learning tool for visualizing logic expressions</li>
                   <li>Translates propositions into digital logic circuits</li>
                   <li>Supports equivalence checking and symbolic manipulation</li>
+                </ul>
+              </div>
+
+              <div>
+                <div className="flex items-center gap-2">
+                  <p className="text-xl font-semibold text-[#BD93F9]">Victoria 2 Save Game Analyzer</p>
+                  {/* <a href="https://github.com/yourusername/cura" target="_blank" rel="noopener noreferrer">
+                    <SiGithub className="text-2xl hover:text-gray-400 transition" />
+                  </a> */}
+                </div>
+                <p className="text-base text-gray-400">Java, CSV, Regex</p>
+                <ul className="list-disc list-inside text-lg">
+                  <li>Parsed 500MB+ Victoria 2 save files in under 5 seconds</li>
+                  <li>Extracted demographics and exported to CSV for visualization</li>
+                  <li>Built a modular architecture to support other Paradox games</li>
                 </ul>
               </div>
             </section>
