@@ -2,7 +2,7 @@
 const nextConfig = {
   output: 'export',
   // Add basePath for GitHub Pages deployment
-  basePath: '/personal-website',
+  basePath: process.env.NODE_ENV === 'production' ? '/personal-website' : '',
   
   // GitHub Pages does not support dynamic routes with trailing slashes
   trailingSlash: true,

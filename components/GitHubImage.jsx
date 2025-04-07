@@ -1,20 +1,10 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
-export default function GitHubImage(props) {
-  const { src, ...rest } = props;
-  const [imageSrc, setImageSrc] = useState(src);
-  
-  useEffect(() => {
-    // Only run this on the client after hydration
-    if (window.location.hostname === 'hughgramel.github.io') {
-      if (src.startsWith('/')) {
-        setImageSrc(`/personal-website${src}`);
-      }
-    }
-  }, [src]);
-    
-  return <Image {...rest} src={imageSrc} />;
+// Instead of dynamically checking the hostname, we'll use Next.js's built-in
+// basePath handling and environment variables
+export default function GitHubImage({ src, ...props }) {
+  // Pass through to the regular Image component with the same props
+  return <Image src={src} {...props} />;
 } 
