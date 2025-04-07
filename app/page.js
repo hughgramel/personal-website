@@ -37,7 +37,11 @@ export default function Home() {
             />
           </div>
           <h1 className="text-3xl mb-8 font-[family-name:var(--font-jetbrains-mono)] flex items-center justify-center gap-4">
-            Hi, I'm Hugh!
+            
+            <span>
+              Hi, I'm
+              <span className="text-[#BD93F9]"> Hugh!</span>
+            </span>
             <a
               href="mailto:hgram007@uw.edu"
               className="hover:text-white transition"
@@ -52,7 +56,7 @@ export default function Home() {
               className="hover:text-white transition"
               aria-label="LinkedIn"
             >
-              <SiLinkedin className="text-3xl" />
+            <SiLinkedin className="text-3xl" />
             </a>
             <a
               href="https://github.com/hughgramel"
@@ -78,7 +82,7 @@ export default function Home() {
 
               <div className="mb-6">
               <div className="flex items-center gap-2">
-                <p className="text-xl font-semibold">Cura</p>
+                <p className="text-xl font-semibold text-[#BD93F9]">Cura</p>
                 <a href="https://github.com/SlimeMan10/coughacks2025/" target="_blank" rel="noopener noreferrer">
                   <SiGithub className="text-2xl hover:text-gray-400 transition" />
                 </a>
@@ -94,7 +98,7 @@ export default function Home() {
 
               <div className="mb-6">
                 <div className="flex items-center gap-2">
-                  <p className="text-xl font-semibold">Productivity Tracking Website</p>
+                  <p className="text-xl font-semibold text-[#BD93F9]">Productivity Tracking Website</p>
                   {/* <a href="https://github.com/yourusername/cura" target="_blank" rel="noopener noreferrer">
                     <SiGithub className="text-2xl hover:text-gray-400 transition" />
                   </a> */}
@@ -109,7 +113,7 @@ export default function Home() {
 
               <div className="mb-6">
                 <div className="flex items-center gap-2">
-                  <p className="text-xl font-semibold">Victoria 2 Save Game Analyzer</p>
+                  <p className="text-xl font-semibold text-[#BD93F9]">Victoria 2 Save Game Analyzer</p>
                   {/* <a href="https://github.com/yourusername/cura" target="_blank" rel="noopener noreferrer">
                     <SiGithub className="text-2xl hover:text-gray-400 transition" />
                   </a> */}
@@ -135,7 +139,7 @@ export default function Home() {
 
               <div>
                 <div className="flex items-center gap-2">
-                  <p className="text-xl font-semibold">Discrete Math Learning Site</p>
+                  <p className="text-xl font-semibold text-[#BD93F9]">Discrete Math Learning Site</p>
                   {/* <a href="https://github.com/yourusername/cura" target="_blank" rel="noopener noreferrer">
                     <SiGithub className="text-2xl hover:text-gray-400 transition" />
                   </a> */}
@@ -152,7 +156,7 @@ export default function Home() {
             {/* Education Section */}
             <section id="education" className="w-full max-w-2xl self-center">
               <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">🎓 Education</h2>
-              <p className="text-lg">Bachelor of Science in Computer Science & Bachelor of Arts in History</p>
+              <p className="text-xl font-semibold text-[#BD93F9]">BS in Computer Science & BA in History</p>
               <p className="text-base text-gray-400">University of Washington — Expected June 2026</p>
               <p className="text-base text-gray-400 mb-2">GPA: 3.93</p>
               <ul className="list-disc list-inside text-lg">
@@ -166,7 +170,7 @@ export default function Home() {
               <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">💼 Work</h2>
 
               <div className="mb-6">
-                <p className="text-xl font-semibold">Software Development Intern</p>
+                <p className="text-xl font-semibold text-[#BD93F9]">Software Development Intern</p>
                 <p className="text-base text-gray-400">DawgPlan — Sep 2024–Present</p>
                 <ul className="list-disc list-inside text-lg">
                   <li>Built a dynamic course-scheduling platform with Next.js, TypeScript, and the T3 stack</li>
@@ -176,7 +180,7 @@ export default function Home() {
               </div>
 
               <div className="mb-6">
-                <p className="text-xl font-semibold">Inventory & Reimbursement Specialist</p>
+                <p className="text-xl font-semibold text-[#BD93F9]">Inventory & Reimbursement Specialist</p>
                 <p className="text-base text-gray-400">University of Washington — Aug 2022–Present</p>
                 <ul className="list-disc list-inside text-lg">
                   <li>Managed 1,500+ asset entries and streamlined inventory tracking</li>
@@ -186,7 +190,7 @@ export default function Home() {
               </div>
 
               <div>
-                <p className="text-xl font-semibold">Technology Assistant</p>
+                <p className="text-xl font-semibold text-[#BD93F9]">Technology Assistant</p>
                 <p className="text-base text-gray-400">Rochester School District — Summer 2022</p>
                 <ul className="list-disc list-inside text-lg">
                   <li>Deployed and tagged 200+ Chromebooks for district-wide use</li>
@@ -200,7 +204,7 @@ export default function Home() {
           {/* Right Section (Extras) */}
           <div id="right-section" className="flex flex-col md:col-span-2 lg:col-span-1 gap-8 lg:gap-30 ">
             <div>
-              <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">👾 4 Favorite Video Games</h2>
+              <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">👾 <span className="text-[#BD93F9]">4</span> Favorite Video Games</h2>
               <RightBox>
                 <ul className="list-disc list-inside">
                   <li>Victoria 2</li>
@@ -213,7 +217,7 @@ export default function Home() {
 
 
             <div>
-              <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">🤔 3 Interesting Facts</h2>
+              <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">🤔 <span className="text-[#BD93F9]">3</span> Interesting Facts</h2>
               <RightBox>
                 <ul className="list-disc list-inside space-y-1.333333">
                   <li>I was a History major for 2 years at UW before deciding I wanted to switch to Computer Science 👨‍💻</li>
@@ -231,7 +235,7 @@ export default function Home() {
             </div>
 
             <div>
-              <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">📘 2 Books</h2>
+              <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">📘 <span className="text-[#BD93F9]">2</span> Books</h2>
               <RightBox>
                 <ul className="list-disc list-inside space-y-1.333333">
                   <li>Brave New World</li>
@@ -242,14 +246,14 @@ export default function Home() {
             </div>
 
             <div>
-              <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">💬 1 Quote</h2>
+              <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">💬 <span className="text-[#BD93F9]">1</span> Quote</h2>
               <RightBox>
                 <p className="italic">“Your time is limited, so don't waste it living someone else's life.” – Steve Jobs</p>
               </RightBox>
             </div>
 
             <div>
-              <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">❓ 0</h2>
+              <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">🤨 <span className="text-[#BD93F9]">0</span></h2>
               <RightBox>
                 <ul className="list-disc list-inside space-y-1.333333">
                   <li>Times I've been to Canada</li>
@@ -260,7 +264,7 @@ export default function Home() {
             </div>
 
             <div>
-              <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">-1</h2>
+              <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]"><span className="text-[#BD93F9]">-1</span></h2>
               <RightBox>
                 <div className="text-sm text-[#F8F8F2] font-[family-name:var(--font-jetbrains-mono)]">
                   <p>Exception in thread "website" hugh.lang</p>
