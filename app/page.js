@@ -75,7 +75,7 @@ export default function Home() {
                 <SiGithub className="text-4xl " />
                 </a>
                 <a
-                  href="/Hugh_Gramelspacher_resume.pdf"
+                  href={`${process.env.NODE_ENV === 'production' ? '/personal-website' : ''}/Hugh_Gramelspacher_resume.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-[#BD93F9] hover:bg-[#A78BFA] text-[#282A36] px-4 py-2 rounded-lg font-semibold transition flex items-center gap-2"
