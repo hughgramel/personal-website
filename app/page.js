@@ -4,6 +4,7 @@ import ContactList from "@/components/ContactList";
 import Link from "next/link";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { HiOutlineMail } from "react-icons/hi";
+import { HiDownload } from "react-icons/hi";
 import RightBox from "../components/RightBox";
 import GitHubImage from "../components/GitHubImage";
 import TypewriterHero from "@/components/TypewriterHero";
@@ -71,83 +72,25 @@ export default function Home() {
                   className="hover:text-white transition"
                   aria-label="GitHub"
                 >
-                  <SiGithub className="text-4xl " />
+                <SiGithub className="text-4xl " />
+                </a>
+                <a
+                  href="/Hugh_Gramelspacher_resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#BD93F9] hover:bg-[#A78BFA] text-[#282A36] px-4 py-2 rounded-lg font-semibold transition flex items-center gap-2"
+                  aria-label="Download Resume"
+                >
+                  <HiDownload className="text-lg" />
+                  Resume
                 </a>
               </div>
           {/* <ContactList /> */}
         </div>
 
-        {/* Center Section (Projects, Education, Work) */}
+        {/* Center Section (Education, Projects, Experience, Skills) */}
         <div className="flex flex-col space-y-12" style={sectionStyle}>
           <div className="space-y-12 flex-1/2">
-            {/* Projects Section */}
-            <section id="projects" className="w-full max-w-2xl self-center">
-              <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">🛠️ Projects</h2>
-
-              <div className="mb-6">
-              <div className="flex items-center gap-2">
-                <p className="text-xl font-semibold text-[#BD93F9]">Cura</p>
-                <a href="https://github.com/SlimeMan10/coughacks2025/" target="_blank" rel="noopener noreferrer">
-                  <SiGithub className="text-2xl hover:text-gray-400 transition" />
-                </a>
-              </div>
-                
-                <p className="text-base text-gray-400">Flutter, Android, Accessibility APIs</p>
-                <ul className="list-disc list-inside text-lg">
-                  <li>Built during Coughacks Everett to help reduce screentime distraction</li>
-                  <li>Blocks selected apps and reports on app usage data in real-time</li>
-                  <li>Incorporated a minimalist interface with motivational messaging</li>
-                </ul>
-              </div>
-
-              <div className="mb-6">
-                <div className="flex items-center gap-2">
-                  <p className="text-xl font-semibold text-[#BD93F9]">Productivity Tracking Website</p>
-                  {/* <a href="https://github.com/yourusername/cura" target="_blank" rel="noopener noreferrer">
-                    <SiGithub className="text-2xl hover:text-gray-400 transition" />
-                  </a> */}
-                </div>
-                <p className="text-base text-gray-400">React, TypeScript, Firebase</p>
-                <ul className="list-disc list-inside text-lg">
-                  <li>Created a full-stack focus tracking app with real-time session logging</li>
-                  <li>Used Firebase Auth and Hosting for scalable deployment</li>
-                  <li>Gamified user engagement with badge rewards</li>
-                </ul>
-              </div>
-
-              
-
-              <div className="mb-6">
-                <div className="flex items-center gap-2">
-                  <p className="text-xl font-semibold text-[#BD93F9]">Discrete Math Learning Site</p>
-                  {/* <a href="https://github.com/yourusername/cura" target="_blank" rel="noopener noreferrer">
-                    <SiGithub className="text-2xl hover:text-gray-400 transition" />
-                  </a> */}
-                </div>
-                <p className="text-base text-gray-400">TypeScript, React</p>
-                <ul className="list-disc list-inside text-lg">
-                  <li>Interactive learning tool for visualizing logic expressions</li>
-                  <li>Translates propositions into digital logic circuits</li>
-                  <li>Supports equivalence checking and symbolic manipulation</li>
-                </ul>
-              </div>
-
-              <div>
-                <div className="flex items-center gap-2">
-                  <p className="text-xl font-semibold text-[#BD93F9]">Victoria 2 Save Game Analyzer</p>
-                  {/* <a href="https://github.com/yourusername/cura" target="_blank" rel="noopener noreferrer">
-                    <SiGithub className="text-2xl hover:text-gray-400 transition" />
-                  </a> */}
-                </div>
-                <p className="text-base text-gray-400">Java, CSV, Regex</p>
-                <ul className="list-disc list-inside text-lg">
-                  <li>Parsed 500MB+ Victoria 2 save files in under 5 seconds</li>
-                  <li>Extracted demographics and exported to CSV for visualization</li>
-                  <li>Built a modular architecture to support other Paradox games</li>
-                </ul>
-              </div>
-            </section>
-
             {/* Education Section */}
             <section id="education" className="w-full max-w-2xl self-center">
               <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">🎓 Education</h2>
@@ -160,27 +103,110 @@ export default function Home() {
               </ul>
             </section>
 
-            {/* Work Section */}
-            <section id="work" className="w-full max-w-2xl self-center">
-              <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">💼 Work</h2>
+            {/* Projects Section */}
+            <section id="projects" className="w-full max-w-2xl self-center">
+              <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">🛠️ Projects</h2>
 
               <div className="mb-6">
-                <p className="text-xl font-semibold text-[#BD93F9]">Software Development Intern</p>
-                <p className="text-base text-gray-400">DawgPlan — Sep 2024–Present</p>
+                <div className="flex items-center gap-2">
+                  <p className="text-xl font-semibold text-[#BD93F9]">Fantasy Football Draft Optimizer</p>
+                  <a href="https://github.com/hughgramel/fantasy-football-optimizer" target="_blank" rel="noopener noreferrer">
+                    <SiGithub className="text-2xl hover:text-gray-400 transition" />
+                  </a>
+                </div>
+                <p className="text-base text-gray-400">Python, NumPy, Pandas, R, Yahoo Fantasy API</p>
                 <ul className="list-disc list-inside text-lg">
-                  <li>Built a dynamic course-scheduling platform with Next.js, TypeScript, and the T3 stack</li>
-                  <li>Served 500+ UW students and integrated secure login via NextAuth</li>
-                  <li>Optimized large dataset queries, improving performance by 30%</li>
+                  <li>Designed Monte Carlo simulation engine to model thousands of draft scenarios, applying probability, data structures, and optimization techniques</li>
+                  <li>Applied statistical analysis and visualization to generate probability distributions of league standings</li>
+                  <li>Integrated with Yahoo Fantasy API for real-time computational analytics and predictive modeling</li>
+                  <li>Created simulation models that improved decision-making accuracy under uncertainty in dynamic environments</li>
                 </ul>
               </div>
 
               <div className="mb-6">
-                <p className="text-xl font-semibold text-[#BD93F9]">Inventory & Reimbursement Specialist</p>
+                <div className="flex items-center gap-2">
+                  <p className="text-xl font-semibold text-[#BD93F9]">Language Learning Platform</p>
+                  <a href="https://github.com/hughgramel/language-learning-platform" target="_blank" rel="noopener noreferrer">
+                    <SiGithub className="text-2xl hover:text-gray-400 transition" />
+                  </a>
+                </div>
+                <p className="text-base text-gray-400">Next.js, TypeScript, Firebase, Azure TTS, Gemini API</p>
+                <ul className="list-disc list-inside text-lg">
+                  <li>Built a scalable data system for adaptive spaced repetition, leveraging applied mathematics and computational models of memory</li>
+                  <li>Implemented analytics pipeline to track user performance and optimize vocabulary retention</li>
+                  <li>Collaborated in a multidisciplinary team environment to design and deploy scalable learning features</li>
+                </ul>
+              </div>
+
+              <div className="mb-6">
+                <div className="flex items-center gap-2">
+                  <p className="text-xl font-semibold text-[#BD93F9]">Snack Business Sales Projection Model</p>
+                  <a href="https://github.com/hughgramel/snack-business-model" target="_blank" rel="noopener noreferrer">
+                    <SiGithub className="text-2xl hover:text-gray-400 transition" />
+                  </a>
+                </div>
+                <p className="text-base text-gray-400">NumPy, Pandas, scikit-learn, Tableau, MATLAB, R</p>
+                <ul className="list-disc list-inside text-lg">
+                  <li>Developed regression and machine learning models for forecasting, improving operational effectiveness and resource planning</li>
+                  <li>Prototyped mathematical models in MATLAB and R to validate long-term demand and profit optimization</li>
+                  <li>Automated reporting with Tableau dashboards, enhancing decision-making and organizational efficiency</li>
+                  <li>Applied optimization and decision-making frameworks to recommend actionable business strategies</li>
+                </ul>
+              </div>
+
+              <div className="mb-6">
+                <div className="flex items-center gap-2">
+                  <p className="text-xl font-semibold text-[#BD93F9]">Cura - Screen Time Manager</p>
+                  <a href="https://github.com/SlimeMan10/coughacks2025/" target="_blank" rel="noopener noreferrer">
+                    <SiGithub className="text-2xl hover:text-gray-400 transition" />
+                  </a>
+                </div>
+                <p className="text-base text-gray-400">Flutter, Android, Accessibility APIs</p>
+                <ul className="list-disc list-inside text-lg">
+                  <li>Built during Coughacks Everett to help reduce screentime distraction</li>
+                  <li>Blocks selected apps and reports on app usage data in real-time</li>
+                  <li>Incorporated a minimalist interface with motivational messaging</li>
+                </ul>
+              </div>
+
+              <div className="mb-6">
+                <div className="flex items-center gap-2">
+                  <p className="text-xl font-semibold text-[#BD93F9]">Victoria 2 Save Game Analyzer</p>
+                  <a href="https://github.com/hughgramel/victoria2-analyzer" target="_blank" rel="noopener noreferrer">
+                    <SiGithub className="text-2xl hover:text-gray-400 transition" />
+                  </a>
+                </div>
+                <p className="text-base text-gray-400">Java, CSV Processing, Regex, Data Visualization</p>
+                <ul className="list-disc list-inside text-lg">
+                  <li>Parsed 500MB+ Victoria 2 save files in under 5 seconds using optimized algorithms</li>
+                  <li>Extracted demographics and exported to CSV for statistical analysis</li>
+                  <li>Built a modular architecture to support other Paradox games and data formats</li>
+                </ul>
+              </div>
+            </section>
+
+            {/* Experience Section */}
+            <section id="experience" className="w-full max-w-2xl self-center">
+              <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">💼 Experience</h2>
+
+              <div className="mb-6">
+                <p className="text-xl font-semibold text-[#BD93F9]">Snack Lounge Operations Manager</p>
+                <p className="text-base text-gray-400">ACM, University of Washington — Spring 2025–Present</p>
+                <ul className="list-disc list-inside text-lg">
+                  <li>Applied data-driven decision-making and optimization to manage $20,000+ in annual purchasing and sales</li>
+                  <li>Modeled inventory systems to reduce theft by 75% and improve operational efficiency</li>
+                  <li>Increased profit margins by 50% by analyzing supply chain data and implementing transformation strategies</li>
+                  <li>Coordinated with engineers, student leaders, and vendors to align technical models with operational goals</li>
+                </ul>
+              </div>
+
+              <div className="mb-6">
+                <p className="text-xl font-semibold text-[#BD93F9]">Inventory and Reimbursement Specialist</p>
                 <p className="text-base text-gray-400">University of Washington — Aug 2022–Present</p>
                 <ul className="list-disc list-inside text-lg">
-                  <li>Managed 1,500+ asset entries and streamlined inventory tracking</li>
-                  <li>Coordinated equipment logistics and monthly reimbursements ($10K+)</li>
-                  <li>Enhanced accountability with advanced record-keeping</li>
+                  <li>Streamlined 1,500+ asset tracking records using computational analytics to improve data accuracy and retrieval</li>
+                  <li>Automated record reconciliation with Python scripts, improving data consistency across 1,500+ assets</li>
+                  <li>Processed $10,000+ in monthly reimbursements with strict adherence to systems modeling and compliance requirements</li>
                 </ul>
               </div>
 
@@ -193,78 +219,138 @@ export default function Home() {
                 </ul>
               </div>
             </section>
+
+            {/* Skills Section */}
+            <section id="skills" className="w-full max-w-2xl self-center">
+              <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">⚡ Skills</h2>
+              
+              <div className="mb-6">
+                <h3 className="text-xl font-semibold text-[#BD93F9] mb-2">Programming Languages</h3>
+                <div className="flex flex-wrap gap-2">
+                  <span className="bg-[#44475A] px-3 py-1 rounded-full text-sm">Python</span>
+                  <span className="bg-[#44475A] px-3 py-1 rounded-full text-sm">JavaScript</span>
+                  <span className="bg-[#44475A] px-3 py-1 rounded-full text-sm">TypeScript</span>
+                  <span className="bg-[#44475A] px-3 py-1 rounded-full text-sm">Java</span>
+                  <span className="bg-[#44475A] px-3 py-1 rounded-full text-sm">R</span>
+                  <span className="bg-[#44475A] px-3 py-1 rounded-full text-sm">MATLAB</span>
+                  <span className="bg-[#44475A] px-3 py-1 rounded-full text-sm">Dart</span>
+                </div>
+              </div>
+
+              <div className="mb-6">
+                <h3 className="text-xl font-semibold text-[#BD93F9] mb-2">Data Science & Analytics</h3>
+                <div className="flex flex-wrap gap-2">
+                  <span className="bg-[#44475A] px-3 py-1 rounded-full text-sm">NumPy</span>
+                  <span className="bg-[#44475A] px-3 py-1 rounded-full text-sm">Pandas</span>
+                  <span className="bg-[#44475A] px-3 py-1 rounded-full text-sm">scikit-learn</span>
+                  <span className="bg-[#44475A] px-3 py-1 rounded-full text-sm">Tableau</span>
+                  <span className="bg-[#44475A] px-3 py-1 rounded-full text-sm">Machine Learning</span>
+                  <span className="bg-[#44475A] px-3 py-1 rounded-full text-sm">Statistical Analysis</span>
+                </div>
+              </div>
+
+              <div className="mb-6">
+                <h3 className="text-xl font-semibold text-[#BD93F9] mb-2">Web Technologies</h3>
+                <div className="flex flex-wrap gap-2">
+                  <span className="bg-[#44475A] px-3 py-1 rounded-full text-sm">React</span>
+                  <span className="bg-[#44475A] px-3 py-1 rounded-full text-sm">Next.js</span>
+                  <span className="bg-[#44475A] px-3 py-1 rounded-full text-sm">Firebase</span>
+                  <span className="bg-[#44475A] px-3 py-1 rounded-full text-sm">Azure TTS</span>
+                  <span className="bg-[#44475A] px-3 py-1 rounded-full text-sm">Gemini API</span>
+                  <span className="bg-[#44475A] px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
+                </div>
+              </div>
+
+              <div className="mb-6">
+                <h3 className="text-xl font-semibold text-[#BD93F9] mb-2">Mobile & Tools</h3>
+                <div className="flex flex-wrap gap-2">
+                  <span className="bg-[#44475A] px-3 py-1 rounded-full text-sm">Flutter</span>
+                  <span className="bg-[#44475A] px-3 py-1 rounded-full text-sm">Android</span>
+                  <span className="bg-[#44475A] px-3 py-1 rounded-full text-sm">Git</span>
+                  <span className="bg-[#44475A] px-3 py-1 rounded-full text-sm">Linux</span>
+                  <span className="bg-[#44475A] px-3 py-1 rounded-full text-sm">Yahoo Fantasy API</span>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
 
-          {/* Right Section (Extras) */}
-          <div id="right-section" className="flex flex-col md:col-span-2 lg:col-span-1 gap-8 lg:gap-20 ">
+          {/* Right Section (Professional Highlights) */}
+          <div id="right-section" className="flex flex-col md:col-span-2 lg:col-span-1 gap-8 lg:gap-12 lg:sticky lg:top-16 lg:self-start">
             <div>
-              <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">👾 <span className="text-[#BD93F9]">4</span> Favorite Video Games</h2>
+              <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">💻 <span className="text-[#BD93F9]">About</span> Me</h2>
               <RightBox>
-                <ul className="list-disc list-inside">
-                  <li>Victoria 2</li>
-                  <li>Hearts of Iron 4</li>
-                  <li>Civilization 6 </li>
-                  <li>Holdfast - Nations At War</li>
-                </ul>
+                <p className="text-base leading-relaxed mb-4">
+                  CS student at the University of Washington passionate about engineering software to improve people's lives through technology and innovation.
+                </p>
+                <p className="text-base leading-relaxed">
+                  <strong>Looking for:</strong> Software Engineering internships and full-time opportunities, roles where I can grow as a developer, and projects that make a meaningful impact.
+                </p>
               </RightBox>
             </div>
 
-
             <div>
-              <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">🤔 <span className="text-[#BD93F9]">3</span> Interesting Facts</h2>
+              <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">🚀 <span className="text-[#BD93F9]">Impact</span> Metrics</h2>
               <RightBox>
-                <ul className="list-disc list-inside space-y-1.333333">
-                  <li>I was a History major for 2 years at UW before deciding I wanted to switch to Computer Science 👨‍💻</li>
-                  <li>When you look me up, you can find 12 year old me in an <a
-                      href="https://www.theolympian.com/news/local/education/article79208437.html"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="underline hover:text-white transition"
-                    >
-                      article about the history bee
-                    </a></li>
-                  <li>I'm from Rochester (Which one? There are 15!)</li>
+                <ul className="list-disc list-inside space-y-2">
+                  <li>Increased profit margins by 50% through data-driven optimization</li>
+                  <li>Reduced inventory theft by 75% with predictive modeling</li>
+                  <li>Managed $20,000+ in annual purchasing and sales operations</li>
+                  <li>Processed $10,000+ monthly reimbursements with 100% accuracy</li>
+                  <li>Parsed 500MB+ files in under 5 seconds using optimized algorithms</li>
                 </ul>
               </RightBox>
             </div>
 
             <div>
-              <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">📘 <span className="text-[#BD93F9]">2</span> Books</h2>
+              <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">💡 <span className="text-[#BD93F9]">Data</span> Science</h2>
               <RightBox>
-                <ul className="list-disc list-inside space-y-1.333333">
-                  <li>Brave New World</li>
-                  <li>Atomic Habits</li>
-                  
+                <ul className="list-disc list-inside space-y-2">
+                  <li>Monte Carlo simulation engines for predictive modeling</li>
+                  <li>Machine learning models for business forecasting</li>
+                  <li>Statistical analysis and probability distributions</li>
+                  <li>Automated reporting with Tableau dashboards</li>
+                  <li>Real-time computational analytics and optimization</li>
                 </ul>
               </RightBox>
             </div>
 
             <div>
-              <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">💬 <span className="text-[#BD93F9]">1</span> Quote</h2>
+              <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">🎯 <span className="text-[#BD93F9]">Leadership</span> Experience</h2>
               <RightBox>
-                <p className="italic">“Your time is limited, so don't waste it living someone else's life.” – Steve Jobs</p>
-              </RightBox>
-            </div>
-
-            <div>
-              <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">🤨 <span className="text-[#BD93F9]">0</span></h2>
-              <RightBox>
-                <ul className="list-disc list-inside space-y-1.333333">
-                  <li>Times I've been to Canada</li>
-                  <li>Number of NFTs I currently own</li>
-                  <li>Hours slept during the hackathon</li>
+                <ul className="list-disc list-inside space-y-2">
+                  <li>Operations Manager for ACM Snack Lounge</li>
+                  <li>Coordinated with engineers and student leaders</li>
+                  <li>Multidisciplinary team collaboration</li>
+                  <li>Vendor relationship management</li>
+                  <li>Strategic planning and goal alignment</li>
                 </ul>
               </RightBox>
             </div>
 
             <div>
-              <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]"><span className="text-[#BD93F9]">-1</span></h2>
+              <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">🌟 <span className="text-[#BD93F9]">Technical</span> Innovation</h2>
               <RightBox>
-                <div className="text-sm text-[#F8F8F2] font-[family-name:var(--font-jetbrains-mono)]">
-                  <p>Exception in thread "website" hugh.lang</p>
-                  <p className="ml-8">.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 5 at website.main(home.hugh:94)</p>
-                </div>
+                <ul className="list-disc list-inside space-y-2">
+                  <li>Scalable data systems and adaptive algorithms</li>
+                  <li>API integrations and real-time analytics</li>
+                  <li>Automated Python scripts for data consistency</li>
+                  <li>Cross-platform mobile and web development</li>
+                  <li>Modular architecture for extensible solutions</li>
+                </ul>
+              </RightBox>
+            </div>
+
+            <div>
+              <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">🎮 <span className="text-[#BD93F9]">Hobbies</span> & Interests</h2>
+              <RightBox>
+                <ul className="list-disc list-inside space-y-2">
+                  <li>Reading and exploring historical literature</li>
+                  <li>Building side projects and experimenting with new technologies</li>
+                  <li>Fantasy sports and statistical analysis</li>
+                  <li>Movies and storytelling</li>
+                  <li>Strategy games focused on historical periods, politics, warfare, and economic systems</li>
+                </ul>
               </RightBox>
             </div>
           </div>
