@@ -15,14 +15,14 @@ export default function TypewriterHero() {
             }}
             onInit={(typewriter) => {
               typewriter
-                .typeString(`Hi, I'm <span class="text-[#BD93F9]">Hugh!</span>`)
+                .typeString(`Hi, I'm <span className="text-[#BD93F9]">Hugh!</span>`)
                 .pauseFor(2000)
                 .deleteAll()
-                .typeString(`CS @ <span class="text-[#BD93F9]">UW</span>`)
+                .typeString(`CS @ <span className="text-[#BD93F9]">UW</span>`)
                 .pauseFor(2000)
                 .deleteAll()
-                .typeString(`Hi, I'm <span class="text-[#BD93F9]">Hugh!</span>`)
-                // .typeString(`Hi, I'm <span class="text-[#8BE9FD]">open for work.</span>`)
+                .typeString(`Hi, I'm <span className="text-[#BD93F9]">Hugh!</span>`)
+                // .typeString(`Hi, I'm <span className="text-[#8BE9FD]">open for work.</span>`)
                 // .pauseFor(2000)
                 // .deleteAll()
                 .start();
