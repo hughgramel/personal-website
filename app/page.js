@@ -4,19 +4,25 @@ import ContactList from "@/components/ContactList";
 import Link from "next/link";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { HiOutlineMail } from "react-icons/hi";
-import { HiDownload } from "react-icons/hi";
+import { HiDownload, HiEye } from "react-icons/hi";
 import RightBox from "../components/RightBox";
 import GitHubImage from "../components/GitHubImage";
 import TypewriterHero from "@/components/TypewriterHero";
+import PDFViewer from "../components/PDFViewer";
+import { useState } from "react";
 
 
 
 
 export default function Home() {
+  const [isPDFViewerOpen, setIsPDFViewerOpen] = useState(false);
+  
   const sectionStyle = {
     fontFamily:
       '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Mona Sans", sans-serif',
   };
+
+  const resumeUrl = `${process.env.NODE_ENV === 'production' ? '/personal-website' : ''}/Hugh_Gramelspacher_resume.pdf`;
 
   return (
     <div className="flex flex-col min-h-screen pt-16 px-4 font-mono bg-[#282A36] text-[#F8F8F2]">
@@ -74,15 +80,23 @@ export default function Home() {
                 >
                 <SiGithub className="text-4xl " />
                 </a>
+                <button
+                  onClick={() => setIsPDFViewerOpen(true)}
+                  className="bg-[#50FA7B] hover:bg-[#45E06A] text-[#282A36] px-4 py-2 rounded-lg font-semibold transition flex items-center gap-2"
+                  aria-label="View Resume"
+                >
+                  <HiEye className="text-lg" />
+                  View
+                </button>
                 <a
-                  href={`${process.env.NODE_ENV === 'production' ? '/personal-website' : ''}/Hugh_Gramelspacher_resume.pdf`}
+                  href={resumeUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-[#BD93F9] hover:bg-[#A78BFA] text-[#282A36] px-4 py-2 rounded-lg font-semibold transition flex items-center gap-2"
                   aria-label="Download Resume"
                 >
                   <HiDownload className="text-lg" />
-                  Resume
+                  Download
                 </a>
               </div>
           {/* <ContactList /> */}
@@ -355,8 +369,14 @@ export default function Home() {
             </div>
           </div>
 
-
       </div>
+      
+      {/* PDF Viewer Modal */}
+      <PDFViewer 
+        isOpen={isPDFViewerOpen}
+        onClose={() => setIsPDFViewerOpen(false)}
+        pdfUrl={resumeUrl}
+      />
     </div>
   );
 }
