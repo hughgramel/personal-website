@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import READMECard from "../components/READMECard";
 import ContactList from "@/components/ContactList";
@@ -8,8 +10,13 @@ import { HiDownload, HiEye } from "react-icons/hi";
 import RightBox from "../components/RightBox";
 import GitHubImage from "../components/GitHubImage";
 import TypewriterHero from "@/components/TypewriterHero";
-import PDFViewer from "../components/PDFViewer";
 import { useState } from "react";
+import dynamic from "next/dynamic";
+
+const PDFViewer = dynamic(() => import("../components/PDFViewer"), {
+  ssr: false,
+  loading: () => <div>Loading PDF viewer...</div>
+});
 
 
 

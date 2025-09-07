@@ -1,15 +1,22 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 import { HiX, HiChevronLeft, HiChevronRight, HiDownload } from 'react-icons/hi';
 
 // Set up PDF.js worker
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+if (typeof window !== 'undefined') {
+  pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+}
 
 export default function PDFViewer({ isOpen, onClose, pdfUrl }) {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
@@ -24,7 +31,7 @@ export default function PDFViewer({ isOpen, onClose, pdfUrl }) {
     setPageNumber(pageNumber + 1);
   }
 
-  if (!isOpen) return null;
+  if (!isOpen || !isClient) return null;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center">
@@ -82,7 +89,7 @@ export default function PDFViewer({ isOpen, onClose, pdfUrl }) {
             >
               <Page 
                 pageNumber={pageNumber} 
-                width={Math.min(800, window.innerWidth - 100)}
+                width={Math.min(800, typeof window !== 'undefined' ? window.innerWidth - 100 : 800)}
                 renderTextLayer={false}
                 renderAnnotationLayer={false}
               />
