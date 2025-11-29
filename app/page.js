@@ -190,7 +190,7 @@ export default function Home() {
               <h2 className="text-3xl font-bold mb-4 font-[family-name:var(--font-jetbrains-mono)]">💼 Experience</h2>
 
               <div className="mb-6">
-                <p className="text-xl font-semibold text-[#BD93F9]">Snack Lounge Operations Manager</p>
+                <p className="text-xl font-semibold text-[#BD93F9]">Business Operations Director</p>
                 <p className="text-base text-gray-400">ACM, University of Washington — Spring 2025–Present</p>
                 <ul className="list-disc list-inside text-lg">
                   <li>Applied data-driven decision-making and optimization to manage $20,000+ in annual purchasing and sales</li>
